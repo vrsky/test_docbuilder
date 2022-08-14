@@ -14,7 +14,7 @@ const subdirs =
 const config = {
   title: 'Hyak',
   tagline: `Includes docs: ${subdirs.join(", ")}`,
-  url: 'https://vashista.io',
+  url: 'https://vrsky.io',
   baseUrl: '/test_website_docs/',
   trailingSlash: true,
   onBrokenLinks: 'throw',
@@ -40,6 +40,7 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         docs: {
+          routeBasePath: '/',
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
