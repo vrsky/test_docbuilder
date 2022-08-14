@@ -10,6 +10,9 @@ jobs:
   test-deploy:
     if: github.event_name != 'push'
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./test_website_docs
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
@@ -23,6 +26,9 @@ jobs:
   deploy:
     if: github.event_name != 'pull_request'
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: ./test_website_docs
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
