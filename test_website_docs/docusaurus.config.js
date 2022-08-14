@@ -14,11 +14,12 @@ const subdirs =
 const config = {
   title: 'Hyak',
   tagline: `Includes docs: ${subdirs.join(", ")}`,
-  url: 'https://docs.test_docbuilder.io',
+  url: 'https://vashista.io',
   baseUrl: '/test_website_docs/',
+  trailingSlash: true,
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
-  favicon: 'img/favicon.ico',
+  favicon: '/test_website_docs/img/favicon.ico',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
