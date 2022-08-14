@@ -31,7 +31,6 @@ jobs:
           cache: yarn
       - uses: webfactory/ssh-agent@v0.5.0
         with:
-          SSH_PASSPHRASE: ${{secrets.SSH_PASSPHRASE}}
           ssh-private-key: ${{ secrets.GH_PAGES_DEPLOY }}
       - name: Deploy to GitHub Pages
         env:
