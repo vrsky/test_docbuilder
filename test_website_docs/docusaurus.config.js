@@ -14,7 +14,7 @@ const subdirs =
 const config = {
   title: 'Hyak',
   tagline: `Includes docs: ${subdirs.join(", ")}`,
-  url: 'https://docs.cafemedia.com',
+  url: 'https://test_docbuilder.io',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
